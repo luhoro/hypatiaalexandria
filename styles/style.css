@@ -1,0 +1,82 @@
+@import "variables.css";
+@import "base.css";
+
+/* CABEÇALHO */
+.header .container{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+   padding: 25px 0;
+}
+
+.header__main h1 {
+   font-family: var(--font-cursive);
+}
+
+
+.header__main .list {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 12px 0;
+}
+
+
+
+.header__main .list li a {
+   padding: 8px 4px;
+   text-decoration: none;
+}
+
+/* CONTEÚDO DO SITE */
+
+/* QUEM FOI  */
+
+/* HABILIDADES */
+
+/* TRABALHO */
+
+/* MORTE */
+
+
+/* RODAPÉ */
+.footer {
+   padding: 50px 0;
+   text-align: justify;
+   background-color: #f0f0f0;
+}
+
+.footer p {
+   font-size: 0.9rem;
+
+}
+
+.footer__description {
+   margin: 0 200px;
+   display: flex;
+   gap: 50px;
+}
+
+.footer__about {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   margin: 50px 0 0 0;
+
+}
+
+.footer__about__icons {
+   display: flex;
+   gap: 18px;
+   padding: 12px 0;
+}
+
+.footer__about__icons a {
+   transition: scale 200ms;
+}
+
+.footer__about__icons a:hover {
+   scale: 1.3;
+}

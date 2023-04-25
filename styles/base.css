@@ -1,0 +1,32 @@
+@import "variables.css";
+
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Ysabeau', sans-serif;
+}
+
+
+.container {
+   box-sizing: border-box;
+   /* border: 1px solid #000000; */
+   width: 80%;
+   margin: 0 auto;
+}
+
+
+
+h1 {
+   font-size: 3.75rem;
+}
+
+h2 {
+   font-size: 3rem;
+}
+
+p {
+   font-size: 1rem;
+}
