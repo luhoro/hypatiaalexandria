@@ -15,14 +15,11 @@
    font-family: var(--font-cursive);
 }
 
-
 .header__main .list {
    display: flex;
    justify-content: space-evenly;
    padding: 12px 0;
 }
-
-
 
 .header__main .list li a {
    padding: 8px 4px;
@@ -30,8 +27,43 @@
 }
 
 /* CONTEÚDO DO SITE */
-
 /* QUEM FOI  */
+.who-was {
+   padding: 50px 0;
+}
+
+.who-was .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.who-was__info {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+}
+
+.who-was__info__groups {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+.who-was__info__groups__text,
+.who-was__dad__text {
+   line-height: 1.5em;
+   text-align: justify;
+}
+
+.who-was__dad {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   
+}
+
 
 /* HABILIDADES */
 
@@ -53,7 +85,7 @@
 }
 
 .footer__description {
-   margin: 0 200px;
+   margin: 0 0%;
    display: flex;
    gap: 50px;
 }
@@ -62,7 +94,6 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-
    margin: 50px 0 0 0;
 
 }
