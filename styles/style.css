@@ -18,58 +18,69 @@
 .header__main .list {
    display: flex;
    justify-content: space-evenly;
+   flex-wrap: wrap;
    padding: 12px 0;
 }
 
+.header__main .list li {
+   margin: 8px 4px;
+}
+
 .header__main .list li a {
-   padding: 8px 4px;
+   padding: 8px 8px;
    text-decoration: none;
 }
 
 /* CONTEÚDO DO SITE */
 /* QUEM FOI  */
-.who-was {
+.about {
    padding: 50px 0;
 }
 
-.who-was .container {
+.about .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 60px;
 }
 
-.who-was__info {
+.about__info {
    display: flex;
    justify-content: center;
    gap: 25px;
 }
 
-.who-was__info__groups {
+.about__info__groups {
    display: flex;
    align-items: center;
    gap: 20px;
 }
 
-.who-was__info__groups__text,
-.who-was__dad__text {
+.about__info__groups__text,
+.about__dad__text {
    line-height: 1.5em;
    text-align: justify;
 }
 
-.who-was__dad {
+.about__dad {
    display: flex;
    align-items: center;
    gap: 20px;
    
 }
 
-
-/* HABILIDADES */
-.contributions {
-
+/* VIDA */
+.life .container {
+   padding: 50px 0;
 }
 
+/* FRASES */
+.phrases .container {
+   padding: 50px 0;
+}
+
+
+/* CONTRIBUIÇÕES */
 .contributions .container {
    padding: 50px 0;
    display: flex;
@@ -97,10 +108,16 @@
    width: 100%;
 }
 
-/* TRABALHO */
-
 /* MORTE */
+.death .container {
+   padding: 50px 0;
+}
 
+
+/* RECOMENDAÇÕES */
+.recomendations .container {
+   padding: 50px 0;
+}
 
 /* RODAPÉ */
 .footer {
