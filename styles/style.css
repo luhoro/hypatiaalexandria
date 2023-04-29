@@ -66,6 +66,36 @@
 
 
 /* HABILIDADES */
+.contributions {
+
+}
+
+.contributions .container {
+   padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contributions .section-title {
+   margin-bottom: 25px;
+}
+
+.contributions__cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 50px;
+}
+
+.contributions__card {
+   background-color: #f0f0f0;
+   width: 180px;
+}
+
+.contributions__card img {
+   width: 100%;
+}
 
 /* TRABALHO */
 

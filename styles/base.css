@@ -20,12 +20,12 @@ body {
 
 
 
-h1 {
+.main-title {
    font-size: 3.75rem;
 }
 
-h2 {
-   font-size: 3rem;
+.section-title {
+   font-size: 1.5rem;
 }
 
 p {
