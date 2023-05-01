@@ -1,7 +1,13 @@
 @import "variables.css";
 @import "base.css";
 
+@import "resposive.css";
+
 /* CABEÇALHO */
+.header {
+   width: 100vw;
+}
+
 .header .container{
    display: flex;
    flex-direction: row;
@@ -11,8 +17,18 @@
    padding: 25px 0;
 }
 
+.header__image {
+   transition: all 200ms ease;
+}
+
+.header__image:hover {
+   opacity: 0.8;
+}
+
 .header__main h1 {
    font-family: var(--font-cursive);
+   padding-bottom: 8px;
+   text-align: center;
 }
 
 .header__main .list {
@@ -23,13 +39,26 @@
 }
 
 .header__main .list li {
-   margin: 8px 4px;
+   margin: 8px 8px;
 }
 
 .header__main .list li a {
-   padding: 8px 8px;
+   padding: 6px 6px;
    text-decoration: none;
+   color: var(--color-primary);
+   border-radius: 18px;
+   transition: text-shadow 200ms;
 }
+
+.header__main .list li a:hover {
+   text-shadow: 1px 1px 5px var(--color-medium-light);
+}
+
+.header__main .list li a:active {
+   color: #000000;
+}
+
+
 
 /* CONTEÚDO DO SITE */
 /* QUEM FOI  */
@@ -69,15 +98,56 @@
    
 }
 
+
+
 /* VIDA */
 .life .container {
    padding: 50px 0;
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
 }
+
+.life__card {
+   display: flex;
+   border: 1px solid var(--color-light);
+   padding: 30px;
+   margin: 0 -50px;
+}
+
+.life__card__education {
+   flex-direction: row;
+   gap: 2em;
+   border-radius: 0 50px 0 50px;
+   
+}
+
+.life__card__education .image1 {
+   align-self: flex-start;
+}
+
+.life__card__education__text {
+   align-self: center;
+   line-height: 1.5rem;
+   margin: 25px 0;
+}
+
+.life__card__education .image2 {
+   align-self: flex-end;
+}
+
+.life__card__paint {
+   border-radius: 50px 0 50px 0;
+}
+
+
 
 /* FRASES */
 .phrases .container {
    padding: 50px 0;
 }
+
+
 
 
 /* CONTRIBUIÇÕES */
@@ -114,16 +184,19 @@
 }
 
 
+
 /* RECOMENDAÇÕES */
 .recomendations .container {
    padding: 50px 0;
 }
 
+
+
 /* RODAPÉ */
 .footer {
    padding: 50px 0;
    text-align: justify;
-   background-color: #f0f0f0;
+   background-color: var(--color-light);
 }
 
 .footer p {
