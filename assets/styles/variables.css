@@ -6,10 +6,8 @@
    --font-cursive: 'Zeyada', cursive;
    --font-title-section: ;
 
-   --color-primary: #7A5347;
-   --color-dark: #42342e ;
-   --color-medium: #a08375;
-   --color-medium-light: #ccb59d;
-   --color-light: #E5E1DD;
-
+   --color-primary: #886358; /* Utilizado */
+   --color-dark: #644538 ;
+   --color-medium: #D1C7BD; /* Utilizado */
+   --color-light: #dfd7cd;
 }
