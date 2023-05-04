@@ -1,20 +1,15 @@
 @import "variables.css";
 @import "base.css";
 
-@import "responsive.css";
 
 /* CABEÇALHO */
-.header {
-   width: 100vw;
-}
-
 .header .container{
    display: flex;
    flex-direction: row;
    justify-content: center;
    align-items: center;
    gap: 50px;
-   padding: 25px 0;
+   padding: 40px 0;
 }
 
 .header__image {
@@ -24,6 +19,8 @@
 .header__image:hover {
    opacity: 0.7;
 }
+
+
 
 .header__main h1 {
    font-family: var(--font-cursive);
@@ -39,7 +36,7 @@
 }
 
 .header__main .list li {
-   margin: 8px 8px;
+   margin: 12px 5px;
 }
 
 .header__main .list li a {
@@ -48,11 +45,12 @@
    color: var(--color-primary);
    border-radius: 18px;
    transition: text-shadow 200ms;
+   box-shadow: 1px 1px 3px var(--color-light);
 }
 
 .header__main .list li a:hover {
    color: var(--color-dark);
-   
+   box-shadow: none;
 }
 
 .header__main .list li a:active {
@@ -60,11 +58,9 @@
 }
 
 
-
 /* CONTEÚDO DO SITE */
 /* QUEM FOI  */
 .about {
-   padding: 50px 0;
    background-color: var(--color-light);
 }
 
@@ -97,14 +93,12 @@
    display: flex;
    align-items: center;
    gap: 20px;
-   
 }
 
 
 
 /* VIDA */
 .life .container {
-   padding: 50px 0;
    display: flex;
    flex-direction: column;
    gap: 50px;
@@ -112,8 +106,9 @@
 
 .life__card {
    display: flex;
+   justify-content: space-evenly;
    border: 1px solid var(--color-medium);
-   padding: 30px;
+   padding: 70px 0;
    margin: 0 -30px;
    gap: 30px;
 }
@@ -143,6 +138,7 @@
 }
 
 .life__card__paint {
+   padding: 70px 50px;
    border-radius: 50px 0 50px 0;
    align-items: center;
 }
@@ -158,10 +154,6 @@
 
 
 /* FRASES */
-.phrases .container {
-   padding: 50px 0;
-}
-
 .phrases__cards {
    display: flex;
    flex-wrap: wrap;
@@ -195,7 +187,6 @@
 
 /* CONTRIBUIÇÕES */
 .contributions .container {
-   padding: 50px 0;
    position: relative;
    max-width: 820px;
 }
@@ -246,6 +237,7 @@
    display: flex;
    flex-flow: row nowrap;
    gap: 50px;
+   padding: 15px 0;
 }
 
 .contributions__card {
@@ -254,24 +246,25 @@
    align-items: center;
    gap: 12px;
    padding: 8px;
-   border: 1px solid var(--color-medium);
+   border: 1px solid var(--color-primary);
    border-radius: 25px 25px 50px 50px;
 }
 
 .contributions__card:nth-of-type(even) {
-   border-radius: 50px 50px 25px 25px;
+   border-radius: 60px 60px 20px 20px;
 }
 
 .item {
    width: 270px;
    height: 360px;
    flex-shrink: 0;
-   opacity: 0.6;
+   opacity: 0.4;
    transition: all 400ms ease-in-out;
 }
 
 .current-item {
    opacity: 1;
+   box-shadow: 1px 1px 10px var(--color-light);
 }
 
 .contributions__card img {
@@ -292,7 +285,6 @@
    background-color: var(--color-light);
    padding: 50px 0;
 }
-
 
 .death__section {
    display: flex;
@@ -325,7 +317,7 @@
 
 .recomendations__cards {
    display: flex;
-   gap: 50px;
+   gap: 80px;
    justify-content: center;
 }
 
@@ -373,7 +365,7 @@
 }
 
 .footer__description a:hover {
-   text-shadow: 1px 1px 5px var(--color-medium-light);
+   color: var(--color-dark);
 }
 
 .footer__about {
@@ -390,7 +382,8 @@
 }
 
 .footer__about__icons a {
-   transition: scale 300ms;
+   transition: all 300ms;
+   fill: #f0f0f0;
 }
 
 .footer__about__icons a:hover {
