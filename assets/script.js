@@ -7,7 +7,7 @@ const maxItems = items.length
 controls.forEach( control => {
     control.addEventListener('click', () => {
         const isLeft = control.classList.contains('arrow-left')
-        
+
         //move Items
         if (isLeft) {
             currentItem -= 1
@@ -27,7 +27,8 @@ controls.forEach( control => {
         //scroll property
         items[currentItem].scrollIntoView({
             inline: "center",
-            behavior: "smooth"
+            behavior: "smooth",
+            block: "nearest"
         })
 
         items[currentItem].classList.add("current-item")
