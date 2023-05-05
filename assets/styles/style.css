@@ -46,6 +46,7 @@
    border-radius: 18px;
    transition: text-shadow 200ms;
    box-shadow: 1px 1px 3px var(--color-light);
+   transition: all 300ms;
 }
 
 .header__main .list li a:hover {
@@ -307,7 +308,7 @@
 
 /* RECOMENDAÇÕES */
 .recomendations {
-   padding: 50px 0;
+   padding: 70px 0;
 }
 
 .recomendations .container {
